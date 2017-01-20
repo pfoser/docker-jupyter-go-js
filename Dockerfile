@@ -30,6 +30,7 @@ RUN wget -q https://nodejs.org/dist/v${NODE_VERSION}/${NODE_PACKAGE}.tar.xz \
     && rm ${NODE_PACKAGE}.tar.xz
 
 RUN npm install -g ijavascript
+RUN npm install -g leaflet
 
 ADD ./js_kernel.json /root/.local/share/jupyter/kernels/javascript/kernel.json
 
